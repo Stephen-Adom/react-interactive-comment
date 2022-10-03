@@ -27,16 +27,16 @@ Users should be able to:
 
 ### Screenshot
 
-![Deskop View](./src/assets/screenshots/desktop-view.png)
-![Login View](./src/assets/screenshots/login.png)
-![Register View](./src/assets/screenshots/register.png)
-![Confirm Delete](./src/assets/screenshots/delete-dialog.png)
-![Mobile](./src/assets/screenshots/mobile-view.png)
+- Deskop View : ![Deskop View](./src/assets/screenshots/desktop-view.png)
+- Login View: ![Login View](./src/assets/screenshots/login.png)
+- Register View: ![Register View](./src/assets/screenshots/register.png)
+- Confirm Delete: ![Confirm Delete](./src/assets/screenshots/delete-dialog.png)
+- Mobile: ![Mobile](./src/assets/screenshots/mobile-view.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Stephen-Adom/react-interactive-comment)
+- Live Site URL: [Add live site URL here](https://react-interactive-comment-j0mh8izte-stephen-adom.vercel.app/)
 
 ## My process
 
