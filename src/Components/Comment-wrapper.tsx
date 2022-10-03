@@ -119,17 +119,18 @@ const CommentWrapper = () => {
       <Dialog
         header="New Comment"
         visible={displayAddModal}
-        style={{ width: "40vw" }}
         breakpoints={{ "960px": "40vw", "768px": "40vw", "320px": "95vw" }}
         onHide={() => setDisplayAddModal(false)}
         className="addCommentDialog"
       >
-        <AddComment setDisplayAddModal={setDisplayAddModal}></AddComment>
+        <AddComment
+          setDisplayAddModal={setDisplayAddModal}
+          setCommentForm={setDisplayAddModal}
+        ></AddComment>
       </Dialog>
 
       <ConfirmDialog
         className="commentConfirmDialog"
-        style={{ width: "30vw" }}
         visible={confirmDialogState}
         onHide={() => dispatch(closeConfirmDialog())}
         message="Are you sure you want to delete this comment? This will remove the comment and can't be undone"

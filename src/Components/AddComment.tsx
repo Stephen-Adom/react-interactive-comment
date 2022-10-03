@@ -7,9 +7,14 @@ import { FirebaseError } from "firebase/app";
 type addCommentPropType = {
   comment?: any;
   setDisplayAddModal?: Dispatch<SetStateAction<boolean>> | undefined;
+  setCommentForm?: Dispatch<SetStateAction<boolean>> | undefined;
 };
 
-const AddComment = ({ comment, setDisplayAddModal }: addCommentPropType) => {
+const AddComment = ({
+  comment,
+  setDisplayAddModal,
+  setCommentForm,
+}: addCommentPropType) => {
   const [commentContent, setCommentContent] = useState<string>("");
   const authUser = useAppSelector((state) => state.auth.authUser);
   const commentservice = new CommentService();
@@ -96,6 +101,10 @@ const AddComment = ({ comment, setDisplayAddModal }: addCommentPropType) => {
       });
   };
 
+  const closeCommentForm = () => {
+    setCommentForm!(false);
+  };
+
   return (
     <>
       <section className="card add-comment-card">
@@ -126,7 +135,14 @@ const AddComment = ({ comment, setDisplayAddModal }: addCommentPropType) => {
           <div className="send-btn flex items-start justify-center">
             <button
               type="button"
-              className="bg-moderateBlue px-5 py-3 text-white rounded-md text-sm ml-4 hover:bg-blue-800 active:bg-blue-800 active:ring-1 ring-blue-500 ring-offset-2"
+              className="bg-red-600 px-3 py-2 text-white rounded-md text-sm ml-4 hover:bg-red-800 active:bg-red-800 active:ring-1 ring-red-500 ring-offset-2"
+              onClick={closeCommentForm}
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              className="bg-moderateBlue px-3 py-2 text-white rounded-md text-sm ml-4 hover:bg-blue-800 active:bg-blue-800 active:ring-1 ring-blue-500 ring-offset-2"
               onClick={submitComment}
             >
               SEND

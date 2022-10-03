@@ -464,7 +464,9 @@ const CommentCard = ({ comment, replyIndex }: commentProp) => {
         </div>
       )}
 
-      {commentForm && <AddComment comment={comment} />}
+      {commentForm && (
+        <AddComment comment={comment} setCommentForm={setCommentForm} />
+      )}
       <Toast ref={toastRef} />
     </>
   );
