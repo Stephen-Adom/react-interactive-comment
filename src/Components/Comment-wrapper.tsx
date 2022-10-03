@@ -119,7 +119,6 @@ const CommentWrapper = () => {
       <Dialog
         header="New Comment"
         visible={displayAddModal}
-        breakpoints={{ "960px": "40vw", "768px": "40vw", "320px": "95vw" }}
         onHide={() => setDisplayAddModal(false)}
         className="addCommentDialog"
       >
