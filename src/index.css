@@ -1,13 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "primereact/resources/themes/lara-light-indigo/theme.css";
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: hsl(228, 33%, 97%);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@layer components {
+  .comment-card {
+    @apply bg-white rounded-lg shadow-lg mb-4;
+  }
+
+  .add-comment-card {
+    @apply bg-white rounded-lg shadow-md cursor-pointer mb-4;
+  }
+
+  .comment-card .upvote-section {
+    @apply flex flex-row sm:flex-row md:flex-col lg:flex-col justify-between items-center bg-lightGrey w-[100px] sm:w-[100px] md:w-max lg:w-max p-1 rounded-xl h-max sm:h-max md:h-[100px] lg:h-[100px] mr-5 mt-3 sm:mt-3 md:mt-0 lg:mt-0;
+  }
+
+  #comment-wrapper {
+    @apply w-[100%] sm:w-[100%] md:w-[80%] lg:w-[60%] mx-auto p-5 max-h-[100%] overflow-y-auto;
+  }
+
+  .comment-reply-section {
+    @apply ml-[10px] sm:ml-[10px] md:ml-[50px] lg:ml-[50px] border-l border-l-gray-300 pl-[30px];
+  }
+
+  .form-control {
+    @apply w-full border border-gray-300 p-2 rounded-md bg-white mt-2 focus:outline-none focus:ring-1 active:ring-1 ring-blue-600 ring-offset-2 text-sm;
+  }
+
+  .form-group {
+    @apply mb-4;
+  }
+
+  .error-message {
+    @apply text-red-700 text-sm mt-1;
+  }
+
+  .form-control.is-invalid {
+    @apply ring-1 ring-red-600 ring-offset-2;
+  }
+
+  .voteBtn {
+    @apply p-[10px] rounded-lg;
+  }
+}
+
+.comment-card .card-body {
+  display: grid;
+  padding: 20px 20px;
+}
+
+.comment-card .comment-info-section {
+  grid-area: commentInfoSection;
+}
+
+.comment-card .upvote-section {
+  grid-area: upvoteSection;
+}
+
+.comment-card .user-info {
+  grid-area: user-info;
+}
+
+.comment-card .replyButton {
+  grid-area: replyButton;
+}
+
+.comment-card .comment-text {
+  grid-area: comment-text;
+}
+
+.add-comment-card .card-body {
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+  grid-template-areas: "auth-profile form-group send-btn";
+  gap: 10px;
+  max-width: 100%;
+}
+
+.add-comment-card .card-body .auth-profile {
+  grid-area: auth-profile;
+  width: 60px;
+  overflow: hidden;
+}
+
+.add-comment-card .card-body .form-group {
+  grid-area: form-group;
+}
+
+.add-comment-card .card-body .send-btn {
+  grid-area: send-btn;
+  width: max-content;
+}
+
+.voteBtn.active {
+  background: #7f81c72b;
+}
+
+.addCommentDialog .p-dialog-content {
+  padding: 0;
+}
+
+/* Xtra Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) {
+  .comment-card .card-body {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "user-info user-info"
+      "comment-text comment-text"
+      "upvoteSection replyButton";
+  }
+
+  .add-comment-card .card-body {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "form-group form-group"
+      "auth-profile send-btn";
+  }
+
+  .add-comment-card .card-body .auth-profile {
+    margin: unset !important;
+  }
+
+  .add-comment-card .card-body .send-btn {
+    justify-self: flex-end;
+  }
+
+  .addCommentDialog {
+    width: 95vw !important;
+  }
+
+  .commentConfirmDialog {
+    width: 95vw !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .comment-card .card-body {
+    grid-template-columns: 10% 50% 40%;
+    grid-template-areas:
+      "upvoteSection user-info replyButton"
+      "upvoteSection comment-text comment-text"
+      "upvoteSection comment-text comment-text";
+  }
+
+  .add-comment-card .card-body {
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+    grid-template-areas: "auth-profile form-group send-btn";
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  .add-comment-card .card-body .auth-profile {
+    margin: 0 auto !important;
+  }
+
+  .add-comment-card .card-body .send-btn {
+    justify-self: flex-start;
+  }
+
+  .addCommentDialog {
+    width: 40vw !important;
+  }
+
+  .commentConfirmDialog {
+    width: 30vw !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .comment-card .card-body {
+    grid-template-columns: 8% 50% 40%;
+    grid-template-areas:
+      "upvoteSection user-info replyButton"
+      "upvoteSection comment-text comment-text"
+      "upvoteSection comment-text comment-text";
+  }
 }

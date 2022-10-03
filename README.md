@@ -1,31 +1,59 @@
-# Create React App
+# Frontend Mentor - Interactive comments section solution
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+This is a solution to the [Interactive comments section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Deploy Your Own
+## Table of contents
 
-Deploy your own Create React App project with Vercel.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
+## Overview
 
-_Live Example: https://create-react-template.vercel.app/_
+### The challenge
 
-## Available Scripts
+Users should be able to:
 
-In the project directory, you can run:
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Create, Read, Update, and Delete comments and replies
+- Upvote and downvote comments
+- **Bonus**: If you're building a purely front-end project, use `localStorage` to save the current state in the browser that persists when the browser is refreshed.
+- **Bonus**: Instead of using the `createdAt` strings from the `data.json` file, try using timestamps and dynamically track the time since the comment or reply was posted.
 
-### `npm start`
+### Screenshot
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Deskop View](./src/assets/screenshots/desktop-view.png)
+![Login View](./src/assets/screenshots/login.png)
+![Register View](./src/assets/screenshots/register.png)
+![Confirm Delete](./src/assets/screenshots/delete-dialog.png)
+![Mobile](./src/assets/screenshots/mobile-view.png)
 
-The page will reload when you make changes. You may also see any lint errors in the console.
+### Links
 
-### `npm test`
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## My process
 
-### `npm run build`
+### Built with
 
-Builds the app for production to the `build` folder.
+- Semantic HTML5 markup
+- CSS Grid and Flexbox
+- Tailwind Css
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Formik](https://formik.org//) - Forms Validations and Rendering
+- [Firebase](https://firebase.google.com/) - For Database
+- [Prime React](https://www.primefaces.org/) - For UI Components
 
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+## Author
+
+<!-- - Website - [Stephen Addom Addae](https://stephen-adom.github.io/tip-calculator) -->
+
+- Frontend Mentor - [@Stephen-Adom](https://www.frontendmentor.io/profile/Stephen-Adom)
+- Twitter - [@Alaska67524884](https://twitter.com/Alaska67524884)
