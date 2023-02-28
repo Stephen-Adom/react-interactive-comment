@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Stephen-Adom/react-interactive-comment)
-- Live Site URL: [Add live site URL here](https://react-interactive-comment-j0mh8izte-stephen-adom.vercel.app/)
+- Solution URL: [Interactive Comment](https://github.com/Stephen-Adom/react-interactive-comment)
+- Live Site URL: [Interactive Comment](https://react-interactive-comment-j0mh8izte-stephen-adom.vercel.app/)
 
 ## My process
 
