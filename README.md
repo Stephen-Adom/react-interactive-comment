@@ -33,7 +33,7 @@
 
 ## 📖 Project Overview <a name="about-project"></a>
 
-The interactive comment project is a web-based application that allows users to post and view comments. Built using the React library, Tailwind CSS, PrimeReact, Formik, TypeScript, and Firebase, the project offers a highly responsive and modern user interface. Users can post comments on a topic or article, view comments posted by others, and reply to comments. The application also features real-time updates, so users can see new comments as they are posted. Additionally, Firebase provides a secure backend database for storing comments and user information, ensuring the application is reliable and secure.
+The interactive comment project is a web-based application that allows users to register and login with their credentials, post and view comments and displays the authenticated user on the navigation bar. Built using the React library, Tailwind CSS, PrimeReact, Formik, TypeScript, and Firebase, the project offers a highly responsive and modern user interface. Users can post comments on a topic or article, view comments posted by others, and reply to comments. The application also features real-time updates, so users can see new comments as they are posted. Additionally, Firebase provides a secure backend database for storing comments and user information, ensuring the application is reliable and secure.
 
 ### Screenshot
 
