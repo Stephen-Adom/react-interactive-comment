@@ -1,29 +1,39 @@
-# Frontend Mentor - Interactive comments section solution
+<a name="readme-top"></a>
 
-This is a solution to the [Interactive comments section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+<div align="center">
+  <h1><b>Interactive Comment</b></h1>
 
-## Table of contents
+</div>
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
+<!-- TABLE OF CONTENTS -->
+
+## 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
   - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-## Overview
+<!-- PROJECT DESCRIPTION -->
 
-### The challenge
+## 📖 Project Overview <a name="about-project"></a>
 
-Users should be able to:
-
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Create, Read, Update, and Delete comments and replies
-- Upvote and downvote comments
-- **Bonus**: If you're building a purely front-end project, use `localStorage` to save the current state in the browser that persists when the browser is refreshed.
-- **Bonus**: Instead of using the `createdAt` strings from the `data.json` file, try using timestamps and dynamically track the time since the comment or reply was posted.
+A full responsive react application with tailwind, prime react and firebase for data storage. Interactive comment keeps track of user comments and responses for a registered user. The user can edit and delete their own comments and replies
 
 ### Screenshot
 
@@ -33,14 +43,9 @@ Users should be able to:
 - Confirm Delete: ![Confirm Delete](./src/assets/screenshots/delete-dialog.png)
 - Mobile: ![Mobile](./src/assets/screenshots/mobile-view.png)
 
-### Links
+### 🛠 Built With <a name="built-with"></a>
 
-- Solution URL: [Interactive Comment](https://github.com/Stephen-Adom/react-interactive-comment)
-- Live Site URL: [Interactive Comment](https://react-interactive-comment-j0mh8izte-stephen-adom.vercel.app/)
-
-## My process
-
-### Built with
+#### Tech Stack <a name="tech-stack"></a>
 
 - Semantic HTML5 markup
 - CSS Grid and Flexbox
@@ -51,9 +56,131 @@ Users should be able to:
 - [Firebase](https://firebase.google.com/) - For Database
 - [Prime React](https://www.primefaces.org/) - For UI Components
 
-## Author
+<!-- Features -->
 
-<!-- - Website - [Stephen Addom Addae](https://stephen-adom.github.io/tip-calculator) -->
+### Key Features <a name="key-features"></a>
 
-- Frontend Mentor - [@Stephen-Adom](https://www.frontendmentor.io/profile/Stephen-Adom)
-- Twitter - [@Alaska67524884](https://twitter.com/Alaska67524884)
+- **Login Page**
+- **Registration Page**
+- **Comments Page**
+- **Auth Navbar Page**
+
+<!-- GETTING STARTED -->
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+Here is a link to my project. You can view to show the output so far.
+
+- Solution URL: [Interactive Comment](https://github.com/Stephen-Adom/react-interactive-comment)
+- Live Site URL: [Interactive Comment](https://react-interactive-comment-j0mh8izte-stephen-adom.vercel.app/)
+
+# 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+<!--
+Example command:
+
+```sh
+ gem install rails
+```
+ -->
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone git@github.com/Stephen-Adom/react-interactive-comment.git
+```
+
+-
+
+### Install
+
+Install this project with:
+
+Example command:
+
+```sh
+  cd my-project
+  npm install
+```
+
+-
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  npm run start
+```
+
+-
+
+### Run tests
+
+To run tests, run the following command:
+
+<!--
+Example command:
+
+```sh
+  bin/rails test test/models/article_test.rb
+```
+--->
+
+### Deployment
+
+You can deploy this project using:
+
+<!--
+Example:
+
+```sh
+
+```
+ -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### 👥 Authors <a name="authors"></a>
+
+👤 **Stephen Addae**
+
+- GitHub: [@Stephen-Adom](https://github.com/Stephen-Adom)
+- Twitter: [@stephen_alaska](https://twitter.com/stephen_alaska)
+- LinkedIn: [Stephen Addae](https://www.linkedin.com/in/stephen-addae-a32334154/)
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Post Page Page**
+- [ ] **Profile Page**
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, please provide suggestions to help improve this project
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would also like to thank [Frontend Mentor](https://www.frontendmentor.io/) for providing the project for me to work on
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
